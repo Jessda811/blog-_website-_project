@@ -1,0 +1,25 @@
+form {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 400px;
+    font-size: 25px;
+    background-image: url(picture/mountain\ 2.jpg);
+
+}
+
+#email {
+    font-size: 35px;
+    background-color: inherit;
+}
+
+#password {
+    font-size: 35px;
+    background-color: initial;
+    background-color: inherit;
+}
+
+#submit {
+    font-size: inherit;
+    background-color: inherit;
+}
+

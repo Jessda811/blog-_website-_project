@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            color:white;
+        }
+    </style>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  
+    <form id = "form" action="/" method="GET" >
+        <h1>Welcome Back!!!</h1>
+        <p>User Name:</p>
+        <input type="email" id="email"><br>
+        <p class="error"></p>
+        <p>Password:</p>
+        <input type="password" id="password"><br>
+        <p class="error"></p>
+        <button type="submit" id="submit" >login</button>
+    </form>
+    <script>
+            const myemail= "blogs@gmail.com"
+            const my_pwd = 123
+            var btn_submit = document.getElementById("submit");
+            btn_submit.disabled= true;
+            var email = document.getElementById("email");
+            var password = document.getElementById("password");
+            var error= document.getElementsByClassName("error");
+            var form = document.getElementById("form");
+            form.addEventListener("change",()=>{
+               
+                console.log(" Email : ",email.value)
+            console.log(" Password : ",password.value," :",typeof(password.value))
+               
+                if(email.value===myemail&&password.value==Number(my_pwd)){
+                    btn_submit.disabled= false;
+                }else{
+                    if(email.value!==myemail){
+                        error[0].innerHTML= " wrong user !";
+                    }else{
+                        error[0].innerHTML= "";
+                        btn_submit.disabled= true;
+                    }
+                if(password.value!==Number(my_pwd)){
+                    error[1].innerHTML="Wrong password" ;
+                }else{
+                    error[1].innerHTML= "" ;
+                    btn_submit.disabled= true;
+                }
+                }
+            });
+            
+            form.addEventListener("submit",(e)=>{
+                e.preventDefault();
+                console.log(" Email : ",email.value)
+                console.log(" Password : ",password.value," :",typeof(password.value))
+               
+                if(email.value==myemail&&password.value==Number(my_pwd)){
+                    console.log("OK")
+                    
+                }else{
+                    if(email.value!==myemail){
+                    // error[0].innerHTML= " wrong user !"
+                }
+                }
+            }); 
+           
+    </script>
+</body>
+</html>
