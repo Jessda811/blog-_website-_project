@@ -1,25 +1,50 @@
 form {
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 400px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     font-size: 25px;
-    background-image: url(picture/mountain\ 2.jpg);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color:white;
 
+}
+
+body {
+    padding-bottom: 200px;
+    background-image: url(picture/2pic.jpg);
+    background-attachment: fixed;
 }
 
 #email {
-    font-size: 35px;
-    background-color: inherit;
+    font-size: inherit;
 }
 
 #password {
-    font-size: 35px;
-    background-color: initial;
-    background-color: inherit;
+    font-size: inherit;
 }
 
 #submit {
     font-size: inherit;
-    background-color: inherit;
+    background-color: goldenrod;
+
 }
 
+#user_name {
+    padding-top: 10px;
+}
+
+
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
