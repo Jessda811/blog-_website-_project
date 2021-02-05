@@ -8,13 +8,14 @@ form {
     border-radius: 25px;
     margin-left: 400px;
     margin-right: 400px;
-    background-color:white;
+    background-color: inherit;
+    border-style: none;
 
 }
 
 body {
     padding-bottom: 200px;
-    background-image: url(picture/2pic.jpg);
+    background-image: url(https://images.ctfassets.net/hrltx12pl8hq/1fR5Y7KaK9puRmCDaIof7j/09e2b2b9eaf42d450aba695056793607/vector1.jpg);
     background-attachment: fixed;
 }
 
